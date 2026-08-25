@@ -1,419 +1,427 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coffee Consultancy — Menu Innovation & Barista Training</title>
-  <meta name="description" content="Coffee consultancy, menu development, drink innovation and barista training.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="YBUNN develops signature menus, trains barista teams and builds café systems in Jordan."
+    />
+    <meta name="theme-color" content="#6246ea" />
+    <title>YBUNN Coffee Innovation Studio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <div class="container nav-shell">
+          <a class="logo-link" href="#home" aria-label="YBUNN home">
+            <img
+              class="brand-logo"
+              src="assets/ybunn-logo.svg"
+              width="210"
+              height="60"
+              alt="YBUNN Coffee Innovation Studio"
+            />
+          </a>
 
-<body>
-  <div class="topbar">
-    <span data-en="Coffee Consultancy • Menu Innovation • Barista Training"
-          data-ar="استشارات قهوة • ابتكار منيو • تدريب باريستا">
-      Coffee Consultancy • Menu Innovation • Barista Training
-    </span>
-    <button id="langBtn">AR</button>
-  </div>
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            aria-label="Open navigation"
+          >
+            <span class="menu-icon" aria-hidden="true"></span>
+          </button>
 
-  <header class="nav-shell">
-    <nav class="container nav">
-      <a class="brand" href="#home">
-        <div class="logo-box">
-          <span>YOUR</span>
-          <strong>LOGO</strong>
+          <nav id="main-navigation" class="main-navigation" aria-label="Main navigation">
+            <a href="#services">Services</a>
+            <a href="#menu-lab">Menu Lab</a>
+            <a href="#training">Training</a>
+            <a href="#process">Process</a>
+            <a href="#work">Work</a>
+          </nav>
+
+          <a class="nav-cta" href="#contact">Start a project <span aria-hidden="true">↗</span></a>
         </div>
-      </a>
+        <div class="scroll-progress" aria-hidden="true"></div>
+      </header>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
-
-      <div class="nav-links" id="navLinks">
-        <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
-        <a href="#menu-lab" data-en="Menu Lab" data-ar="مختبر المنيو">Menu Lab</a>
-        <a href="#training" data-en="Training" data-ar="التدريب">Training</a>
-        <a href="#process" data-en="Process" data-ar="طريقة العمل">Process</a>
-        <a href="#work" data-en="Work" data-ar="الأعمال">Work</a>
-      </div>
-
-      <a class="nav-cta" href="#contact" data-en="Book a consultation" data-ar="احجز استشارة">Book a consultation</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-bg"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="kicker" data-en="Coffee concepts built professionally" data-ar="نبني مفهوم القهوة باحتراف">
-            Coffee concepts built professionally
-          </div>
-
-          <h1 data-en="Build a coffee concept people remember."
-              data-ar="ابنِ تجربة قهوة الناس تتذكرها.">
-            Build a coffee concept people remember.
-          </h1>
-
-          <p data-en="From business consultation and menu engineering to signature drink creation and hands-on barista training — everything is built around your café, your audience and your goals."
-             data-ar="من استشارات المشروع وهندسة المنيو، إلى ابتكار المشروبات الخاصة والتدريب العملي للباريستا — كل شيء يتبنى حول الكافيه، جمهورك، وهدفك.">
-            From business consultation and menu engineering to signature drink creation and hands-on barista training — everything is built around your café, your audience and your goals.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact" data-en="Start your project" data-ar="ابدأ مشروعك">Start your project</a>
-            <a class="btn secondary" href="#services" data-en="Explore services" data-ar="شوف الخدمات">Explore services</a>
-          </div>
-
-          <div class="hero-points">
-            <div><span>01</span><b data-en="Consulting" data-ar="استشارات">Consulting</b></div>
-            <div><span>02</span><b data-en="Menu Innovation" data-ar="ابتكار المنيو">Menu Innovation</b></div>
-            <div><span>03</span><b data-en="Barista Training" data-ar="تدريب باريستا">Barista Training</b></div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="photo-frame">
-            <img src="assets/hero-coffee.png" alt="Coffee setup">
-            <div class="floating-note n1">
-              <small data-en="MENU LAB" data-ar="مختبر المنيو">MENU LAB</small>
-              <strong data-en="Original drinks, built from zero." data-ar="مشروبات جديدة من الصفر.">Original drinks, built from zero.</strong>
+      <section class="hero" id="home">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow"><span></span> Coffee Innovation Studio · Jordan</p>
+            <h1>We create what cafés will serve <em>next.</em></h1>
+            <p class="hero-lead">
+              YBUNN develops original beverage menus, trains barista teams, prepares café
+              systems and turns bold ideas into repeatable, profitable experiences.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-lime" href="#contact">Create your color <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#services">Explore the studio <span aria-hidden="true">↘</span></a>
             </div>
-            <div class="floating-note n2">
-              <small data-en="TRAINING" data-ar="تدريب">TRAINING</small>
-              <strong data-en="Better workflow. Better coffee." data-ar="شغل أرتب. قهوة أفضل.">Better workflow. Better coffee.</strong>
+            <div class="hero-points" aria-label="YBUNN advantages">
+              <span><b aria-hidden="true">✓</b> Natural flavor systems</span>
+              <span><b aria-hidden="true">✓</b> Tested for repeatability</span>
+              <span><b aria-hidden="true">✓</b> Built for real café teams</span>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="statement">
-      <div class="container statement-inner">
-        <span data-en="NOT JUST RECIPES." data-ar="مش مجرد وصفات.">NOT JUST RECIPES.</span>
-        <h2 data-en="We build systems, menus and skills that make the café stronger."
-            data-ar="نبني نظام، منيو، ومهارات تخلي الكافيه أقوى.">
-          We build systems, menus and skills that make the café stronger.
-        </h2>
-      </div>
-    </section>
-
-    <section class="section container" id="services">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow" data-en="What we do" data-ar="شو بنعمل">What we do</span>
-          <h2 data-en="Three services. One complete coffee direction."
-              data-ar="ثلاث خدمات. اتجاه كامل للكافيه.">
-            Three services. One complete coffee direction.
-          </h2>
-        </div>
-      </div>
-
-      <div class="service-grid visual-services">
-        <article class="service-card image-service consulting-service">
-          <img src="assets/consulting-scene.png" alt="Coffee consultancy planning">
-          <div class="service-overlay">
-            <div class="service-no">01</div>
-            <h3 data-en="Coffee Consultancy" data-ar="استشارات المقاهي">Coffee Consultancy</h3>
-            <p data-en="Strategy, workflow, equipment, menu structure and service experience."
-               data-ar="استراتيجية، سير عمل، معدات، هيكلة منيو وتجربة زبون.">
-              Strategy, workflow, equipment, menu structure and service experience.
-            </p>
-            <a href="#consulting" data-en="View service →" data-ar="شوف الخدمة ←">View service →</a>
-          </div>
-        </article>
-
-        <article class="service-card image-service menu-service">
-          <img src="assets/menu-innovation.png" alt="Signature drink menu innovation">
-          <div class="service-overlay">
-            <div class="service-no">02</div>
-            <h3 data-en="Menu Innovation" data-ar="ابتكار وتطوير المنيو">Menu Innovation</h3>
-            <p data-en="Original drinks, signature concepts, recipes and presentation."
-               data-ar="مشروبات مبتكرة، سيغنتشر، وصفات وتقديم.">
-              Original drinks, signature concepts, recipes and presentation.
-            </p>
-            <a href="#menu-lab" data-en="Enter the Menu Lab →" data-ar="ادخل مختبر المنيو ←">Enter the Menu Lab →</a>
-          </div>
-        </article>
-
-        <article class="service-card image-service training-service">
-          <img src="assets/barista-training.png" alt="Hands-on barista training">
-          <div class="service-overlay">
-            <div class="service-no">03</div>
-            <h3 data-en="Barista Training" data-ar="تدريب الباريستا">Barista Training</h3>
-            <p data-en="Practical training on espresso, milk, workflow and consistency."
-               data-ar="تدريب عملي على الإسبريسو، الحليب، السرعة والثبات.">
-              Practical training on espresso, milk, workflow and consistency.
-            </p>
-            <a href="#training" data-en="See training →" data-ar="شوف التدريب ←">See training →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="menu-lab section" id="menu-lab">
-      <div class="container lab-grid">
-        <div class="lab-copy">
-          <span class="eyebrow light" data-en="Menu Lab" data-ar="مختبر المنيو">Menu Lab</span>
-          <h2 data-en="Your menu should have drinks people can’t get everywhere."
-              data-ar="المنيو لازم يكون فيه مشروبات ما بتلاقيها بكل مكان.">
-            Your menu should have drinks people can’t get everywhere.
-          </h2>
-
-          <p data-en="We develop original drinks from the first idea to the final recipe — flavor direction, ingredients, ratios, texture, presentation, naming and serving standards."
-             data-ar="بنطوّر المشروب من أول فكرة لحد الوصفة النهائية — الطعم، المكونات، النسب، القوام، التقديم، الاسم ومعيار التنفيذ.">
-            We develop original drinks from the first idea to the final recipe — flavor direction, ingredients, ratios, texture, presentation, naming and serving standards.
-          </p>
-
-          <div class="lab-list">
-            <div><span>01</span><b data-en="Signature drink creation" data-ar="ابتكار مشروبات سيغنتشر">Signature drink creation</b></div>
-            <div><span>02</span><b data-en="Seasonal menu development" data-ar="تطوير منيو موسمي">Seasonal menu development</b></div>
-            <div><span>03</span><b data-en="Recipe standardization" data-ar="توحيد الوصفات">Recipe standardization</b></div>
-            <div><span>04</span><b data-en="Naming & presentation direction" data-ar="تسمية وتوجيه التقديم">Naming & presentation direction</b></div>
-            <div><span>05</span><b data-en="Cost & operational feasibility" data-ar="حساب قابلية التنفيذ والتكلفة">Cost & operational feasibility</b></div>
-          </div>
-        </div>
-
-        <div class="lab-visual editorial-collage">
-          <img class="lab-main-img" src="assets/menu-innovation.png" alt="Creative signature drinks">
-          <img class="lab-small-img top-small" src="assets/consulting-scene.png" alt="Menu planning">
-          <div class="lab-badge">
-            <span>MENU LAB</span>
-            <strong data-en="Concept → Recipe → Serve" data-ar="فكرة ← وصفة ← تقديم">Concept → Recipe → Serve</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" id="training">
-      <div class="training-showcase">
-        <div class="training-photo-stack">
-          <img class="training-main-photo" src="assets/barista-training.png" alt="Barista training session">
-          <img class="training-detail-photo" src="assets/workflow-standards.png" alt="Coffee workflow standards">
-          <div class="photo-tag">
-            <span>BARISTA TRAINING</span>
-            <b data-en="Hands-on. Practical. Repeatable." data-ar="عملي. مباشر. قابل للتكرار.">Hands-on. Practical. Repeatable.</b>
-          </div>
-        </div>
-
-        <div class="training-content">
-          <span class="eyebrow" data-en="Barista Training" data-ar="تدريب الباريستا">Barista Training</span>
-          <h2 data-en="Train the team to deliver the same quality every shift."
-              data-ar="درّب الفريق ليطلع نفس المستوى بكل شفت.">
-            Train the team to deliver the same quality every shift.
-          </h2>
-          <p data-en="Training can be built for beginners, an existing café team, or a new opening. The focus is practical performance behind the bar."
-             data-ar="التدريب ممكن يكون للمبتدئين، لفريق موجود، أو لكافيه جديد. التركيز عملي على الأداء خلف البار.">
-            Training can be built for beginners, an existing café team, or a new opening. The focus is practical performance behind the bar.
-          </p>
-
-          <div class="training-modules compact-modules">
-            <article><span>01</span><h3 data-en="Espresso & Extraction" data-ar="الإسبريسو والاستخلاص">Espresso & Extraction</h3></article>
-            <article><span>02</span><h3 data-en="Milk & Texture" data-ar="الحليب والقوام">Milk & Texture</h3></article>
-            <article><span>03</span><h3 data-en="Workflow & Speed" data-ar="سير العمل والسرعة">Workflow & Speed</h3></article>
-            <article><span>04</span><h3 data-en="Recipes & Standards" data-ar="الوصفات والمعايير">Recipes & Standards</h3></article>
-          </div>
-
-          <a href="#contact" class="btn primary" data-en="Plan a training session" data-ar="خطط جلسة تدريب">Plan a training session</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="image-band section">
-      <div class="container">
-        <div class="image-band-grid">
-          <div class="band-large">
-            <img src="assets/workflow-standards.png" alt="Coffee workflow and standards">
-            <div class="band-caption">
-              <span data-en="SYSTEMS MATTER" data-ar="النظام بيفرق">SYSTEMS MATTER</span>
-              <h3 data-en="Good coffee needs a good system behind it."
-                  data-ar="القهوة الممتازة بدها نظام ممتاز وراها.">
-                Good coffee needs a good system behind it.
-              </h3>
+          <div class="hero-visual" data-reveal data-parallax>
+            <div class="color-orb orb-violet" aria-hidden="true"></div>
+            <div class="color-orb orb-coral" aria-hidden="true"></div>
+            <div class="color-orb orb-aqua" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img
+                src="assets/hero-coffee.webp"
+                alt="Specialty coffee setup used for menu and service development"
+              />
+            </div>
+            <div class="hero-badge">
+              <img src="assets/ybunn-symbol.svg" width="54" height="54" alt="" />
+              <span>Flavor beyond<br />the familiar</span>
             </div>
           </div>
-          <div class="band-side">
-            <img src="assets/consulting-scene.png" alt="Coffee consultancy">
-            <img src="assets/menu-innovation.png" alt="Menu development">
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="consulting section" id="consulting">
-      <div class="container consulting-grid">
-        <div>
-          <span class="eyebrow light" data-en="Consulting" data-ar="الاستشارات">Consulting</span>
-          <h2 data-en="Before you buy equipment or print a menu, make the right decisions."
-              data-ar="قبل ما تشتري معدات أو تطبع منيو، خذ القرارات الصح.">
-            Before you buy equipment or print a menu, make the right decisions.
-          </h2>
-        </div>
-
-        <div class="consulting-list">
-          <div><b>01</b><span data-en="Concept & positioning" data-ar="الفكرة والتموضع بالسوق">Concept & positioning</span></div>
-          <div><b>02</b><span data-en="Bar workflow & station planning" data-ar="تخطيط البار وسير العمل">Bar workflow & station planning</span></div>
-          <div><b>03</b><span data-en="Equipment selection" data-ar="اختيار المعدات">Equipment selection</span></div>
-          <div><b>04</b><span data-en="Menu architecture" data-ar="هيكلة المنيو">Menu architecture</span></div>
-          <div><b>05</b><span data-en="Operational standards" data-ar="معايير التشغيل">Operational standards</span></div>
-          <div><b>06</b><span data-en="Launch readiness" data-ar="الجاهزية للافتتاح">Launch readiness</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" id="process">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow" data-en="How it works" data-ar="كيف بنشتغل">How it works</span>
-          <h2 data-en="A clear process from idea to execution."
-              data-ar="خطوات واضحة من الفكرة للتنفيذ.">
-            A clear process from idea to execution.
-          </h2>
-        </div>
-      </div>
-
-      <div class="process-grid">
-        <article>
-          <span>01</span>
-          <h3 data-en="Discovery" data-ar="فهم المشروع">Discovery</h3>
-          <p data-en="We understand the café, audience, goals and current challenges."
-             data-ar="نفهم الكافيه، الجمهور، الهدف والمشاكل الحالية.">
-            We understand the café, audience, goals and current challenges.
-          </p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3 data-en="Development" data-ar="التطوير">Development</h3>
-          <p data-en="Ideas, recipes, systems and training are developed around the project."
-             data-ar="نطوّر الأفكار والوصفات والنظام والتدريب حول المشروع نفسه.">
-            Ideas, recipes, systems and training are developed around the project.
-          </p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3 data-en="Testing" data-ar="التجربة">Testing</h3>
-          <p data-en="We test taste, workflow, repeatability and operational fit."
-             data-ar="نجرب الطعم، سرعة التنفيذ، الثبات وملاءمة التشغيل.">
-            We test taste, workflow, repeatability and operational fit.
-          </p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3 data-en="Implementation" data-ar="التطبيق">Implementation</h3>
-          <p data-en="The final system is handed over with clear standards and team guidance."
-             data-ar="نسلّم النظام النهائي بمعايير واضحة وتوجيه للفريق.">
-            The final system is handed over with clear standards and team guidance.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="work section" id="work">
-      <div class="container">
-        <div class="section-head light-head">
+      <section class="manifesto">
+        <div class="container manifesto-grid" data-reveal>
+          <p class="section-kicker">Our belief</p>
           <div>
-            <span class="eyebrow light" data-en="Selected work" data-ar="نماذج من الشغل">Selected work</span>
-            <h2 data-en="Show the thinking behind the drink."
-                data-ar="ورجي الناس التفكير اللي ورا المشروب.">
-              Show the thinking behind the drink.
-            </h2>
+            <h2>Difference is not the risk. Sameness is.</h2>
+            <p>
+              Leaving the familiar is not a gamble. Blind imitation is. We use difference
+              as a method—and innovation as a way to express what makes every café
+              unmistakably its own.
+            </p>
           </div>
         </div>
+      </section>
 
-        <div class="case-grid">
-          <article class="case-card c1">
-            <span>CASE 01</span>
-            <h3 data-en="Signature Menu Development" data-ar="تطوير منيو سيغنتشر">Signature Menu Development</h3>
-            <p data-en="A section reserved for your real menu project, before/after and final drinks."
-               data-ar="مكان لعرض مشروع منيو حقيقي: قبل/بعد والمشروبات النهائية.">
-              A section reserved for your real menu project, before/after and final drinks.
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="section-kicker">What we build</p>
+              <h2>One studio. Four connected systems.</h2>
+            </div>
+            <p>
+              Every service is designed to move from a strong idea to a clear, trainable
+              and commercially useful result.
             </p>
-          </article>
+          </div>
 
-          <article class="case-card c2">
-            <span>CASE 02</span>
-            <h3 data-en="Barista Team Training" data-ar="تدريب فريق باريستا">Barista Team Training</h3>
-            <p data-en="Show the training goal, modules and what changed in the bar workflow."
-               data-ar="اعرض هدف التدريب، المحاور والتغيير اللي صار بسير العمل.">
-              Show the training goal, modules and what changed in the bar workflow.
-            </p>
-          </article>
+          <div class="service-grid" data-reveal>
+            <article class="service-card service-violet">
+              <div class="service-image">
+                <img src="assets/menu-innovation.webp" alt="Signature Menu Development" />
+              </div>
+              <div class="service-body">
+                <span>01</span>
+                <h3>Signature Menu Development</h3>
+                <p>
+                  Original drinks, natural flavor systems, costing, recipes and a menu
+                  identity built around your café.
+                </p>
+                <a href="#contact">Ask about this service <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
 
-          <article class="case-card c3">
-            <span>CASE 03</span>
-            <h3 data-en="Café Consulting" data-ar="استشارة كافيه">Café Consulting</h3>
-            <p data-en="Use this space for a consultation project, menu structure or opening support."
-               data-ar="مكان لمشروع استشاري، ترتيب منيو أو دعم افتتاح.">
-              Use this space for a consultation project, menu structure or opening support.
-            </p>
-          </article>
+            <article class="service-card service-coral">
+              <div class="service-image">
+                <img src="assets/barista-training.webp" alt="Barista Team Training" />
+              </div>
+              <div class="service-body">
+                <span>02</span>
+                <h3>Barista Team Training</h3>
+                <p>
+                  Hands-on training that turns recipes into repeatable service, confident
+                  technique and stronger workflow.
+                </p>
+                <a href="#contact">Ask about this service <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="service-card service-aqua">
+              <div class="service-image">
+                <img src="assets/consulting-scene.webp" alt="Café Setup and Consulting" />
+              </div>
+              <div class="service-body">
+                <span>03</span>
+                <h3>Café Setup &amp; Consulting</h3>
+                <p>
+                  Concept, equipment, menu structure, workflow and launch support shaped
+                  into one clear operating system.
+                </p>
+                <a href="#contact">Ask about this service <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="service-card service-lime">
+              <div class="service-image">
+                <img src="assets/workflow-standards.webp" alt="Standards and Workflow" />
+              </div>
+              <div class="service-body">
+                <span>04</span>
+                <h3>Standards &amp; Workflow</h3>
+                <p>
+                  Recipe cards, quality checks, station standards and practical systems
+                  that keep every cup consistent.
+                </p>
+                <a href="#contact">Ask about this service <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <span class="eyebrow" data-en="Start a project" data-ar="ابدأ مشروع">Start a project</span>
-          <h2 data-en="Tell me what you’re building."
-              data-ar="احكيلي شو المشروع اللي بدك تبنيه.">
-            Tell me what you’re building.
-          </h2>
-          <p data-en="Choose the service you need and send the basic project details. This section can later be connected to WhatsApp, email or a booking system."
-             data-ar="اختار الخدمة اللي بدك إياها وابعت تفاصيل المشروع الأساسية. لاحقاً بنربطها بواتساب أو الإيميل أو نظام حجز.">
-            Choose the service you need and send the basic project details. This section can later be connected to WhatsApp, email or a booking system.
-          </p>
+      <section class="menu-lab" id="menu-lab">
+        <div class="container lab-grid">
+          <div class="lab-copy" data-reveal>
+            <p class="section-kicker light">The YBUNN Menu Lab</p>
+            <h2>We don’t replace one color with another. We create a new one.</h2>
+            <p>
+              Natural ingredients are reworked through flavor architecture, testing and
+              practical café execution. The outcome is a drink guests remember—and a
+              recipe the team can repeat.
+            </p>
+            <ul class="feature-list">
+              <li><span>01</span> Flavor direction and creative concept</li>
+              <li><span>02</span> Recipe development and sensory testing</li>
+              <li><span>03</span> Costing, yield and service workflow</li>
+              <li><span>04</span> Final standards and team handover</li>
+            </ul>
+            <a class="button button-lime" href="#contact">Develop a menu <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="lab-collage" data-reveal>
+            <div class="lab-photo lab-photo-main">
+              <img src="assets/menu-innovation.webp" alt="Three original signature coffee drinks" />
+            </div>
+            <div class="lab-photo lab-photo-small">
+              <img src="assets/consulting-scene.webp" alt="Menu concept planning and café consultation" />
+            </div>
+            <div class="lab-label">Ingredient → Experiment → New flavor</div>
+          </div>
         </div>
+      </section>
 
-        <form class="contact-form" id="contactForm">
-          <label>
-            <span data-en="Your name" data-ar="الاسم">Your name</span>
-            <input type="text" required placeholder="Name">
-          </label>
+      <section class="section training" id="training">
+        <div class="container training-grid">
+          <div class="training-images" data-reveal>
+            <div class="training-main">
+              <img src="assets/barista-training.webp" alt="Hands-on barista team training" />
+            </div>
+            <div class="training-detail">
+              <img src="assets/workflow-standards.webp" alt="Coffee recipe and workflow standards" />
+            </div>
+          </div>
 
-          <label>
-            <span data-en="Service" data-ar="الخدمة">Service</span>
-            <select required>
-              <option value="">Choose a service</option>
-              <option>Coffee Consultancy</option>
-              <option>Menu Innovation</option>
-              <option>Barista Training</option>
-              <option>Full Project</option>
-            </select>
-          </label>
+          <div class="training-copy" data-reveal>
+            <p class="section-kicker">Barista training</p>
+            <h2>Train the reason, not only the recipe.</h2>
+            <p>
+              Teams perform better when they understand flavor, extraction, workflow and
+              quality—not when they only memorize steps.
+            </p>
+            <div class="training-modules">
+              <div><b aria-hidden="true">◈</b><span>Technique &amp; sensory foundations</span></div>
+              <div><b aria-hidden="true">✦</b><span>Signature drink production</span></div>
+              <div><b aria-hidden="true">⬡</b><span>Station workflow &amp; speed</span></div>
+              <div><b aria-hidden="true">✓</b><span>Quality control &amp; repeatability</span></div>
+            </div>
+            <a class="text-link dark" href="#contact">Plan a training program <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
 
-          <label>
-            <span data-en="Project details" data-ar="تفاصيل المشروع">Project details</span>
-            <textarea rows="5" placeholder="Tell us about your café or project..."></textarea>
-          </label>
+      <section class="image-bridge" aria-label="Café systems and consulting">
+        <div class="bridge-photo">
+          <img src="assets/consulting-scene.webp" alt="Café consulting and opening preparation" />
+          <div class="bridge-overlay"></div>
+          <div class="container bridge-copy" data-reveal>
+            <p class="section-kicker light">Café setup &amp; consulting</p>
+            <h2>A clear system before the doors open.</h2>
+            <p>
+              Concept, equipment, menu, stations, workflow and standards are shaped
+              together—so the experience works as well as it looks.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          <button type="submit" data-en="Send project request" data-ar="أرسل طلب المشروع">Send project request</button>
-          <p id="formMsg"></p>
-        </form>
-      </div>
-    </section>
-  </main>
+      <section class="section process-section" id="process">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="section-kicker">How we work</p>
+              <h2>A clear path from idea to execution.</h2>
+            </div>
+            <p>
+              Every stage has an image, a purpose and an output—nothing is left as an
+              empty placeholder.
+            </p>
+          </div>
 
-  <footer>
-    <div class="container footer">
-      <div class="footer-brand">
-        <div class="logo-box light-logo"><span>YOUR</span><strong>LOGO</strong></div>
-        <p data-en="Coffee consultancy, menu innovation and barista training."
-           data-ar="استشارات قهوة، تطوير منيو وتدريب باريستا.">
-          Coffee consultancy, menu innovation and barista training.
-        </p>
-      </div>
-      <div class="footer-links">
-        <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
-        <a href="#menu-lab" data-en="Menu Lab" data-ar="مختبر المنيو">Menu Lab</a>
-        <a href="#training" data-en="Training" data-ar="التدريب">Training</a>
-        <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
-      </div>
-    </div>
-  </footer>
+          <div class="process-grid" data-reveal>
+            <article class="process-card">
+              <div class="process-image">
+                <img src="assets/consulting-scene.webp" alt="Discovery stage" />
+                <span>01</span>
+              </div>
+              <div class="process-body">
+                <b class="process-icon" aria-hidden="true">◎</b>
+                <h3>Discovery</h3>
+                <p>We understand the café, audience, goals and the exact challenge that needs to change.</p>
+              </div>
+            </article>
 
-  <script src="script.js"></script>
-</body>
+            <article class="process-card">
+              <div class="process-image">
+                <img src="assets/menu-innovation.webp" alt="Development stage" />
+                <span>02</span>
+              </div>
+              <div class="process-body">
+                <b class="process-icon" aria-hidden="true">✦</b>
+                <h3>Development</h3>
+                <p>Ideas, recipes, systems and training are developed around the project—not copied from a template.</p>
+              </div>
+            </article>
+
+            <article class="process-card">
+              <div class="process-image">
+                <img src="assets/workflow-standards.webp" alt="Testing stage" />
+                <span>03</span>
+              </div>
+              <div class="process-body">
+                <b class="process-icon" aria-hidden="true">◌</b>
+                <h3>Testing</h3>
+                <p>We test flavor, workflow, repeatability, cost and operational fit before anything goes live.</p>
+              </div>
+            </article>
+
+            <article class="process-card">
+              <div class="process-image">
+                <img src="assets/barista-training.webp" alt="Implementation stage" />
+                <span>04</span>
+              </div>
+              <div class="process-body">
+                <b class="process-icon" aria-hidden="true">↗</b>
+                <h3>Implementation</h3>
+                <p>The final system is handed over with clear standards, team guidance and launch support.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="container">
+          <div class="section-heading section-heading-light" data-reveal>
+            <div>
+              <p class="section-kicker light">Selected directions</p>
+              <h2>Real work belongs in the frame.</h2>
+            </div>
+            <p>
+              These image-led cards are ready for your final case studies,
+              before-and-after details and measurable project results.
+            </p>
+          </div>
+
+          <div class="case-grid" data-reveal>
+            <article class="case-card case-violet" data-tilt>
+              <img src="assets/menu-innovation.webp" alt="Signature Menu Development" />
+              <div class="case-shade"></div>
+              <div class="case-top"><span>CASE 01</span><span aria-hidden="true">↗</span></div>
+              <div class="case-content">
+                <h3>Signature Menu Development</h3>
+                <p>A complete drink concept—from flavor direction and testing to final recipes and service standards.</p>
+              </div>
+            </article>
+
+            <article class="case-card case-coral" data-tilt>
+              <img src="assets/barista-training.webp" alt="Barista Team Training" />
+              <div class="case-shade"></div>
+              <div class="case-top"><span>CASE 02</span><span aria-hidden="true">↗</span></div>
+              <div class="case-content">
+                <h3>Barista Team Training</h3>
+                <p>A focused program that upgrades technique, speed, consistency and the complete bar workflow.</p>
+              </div>
+            </article>
+
+            <article class="case-card case-aqua" data-tilt>
+              <img src="assets/consulting-scene.webp" alt="Café Consulting" />
+              <div class="case-shade"></div>
+              <div class="case-top"><span>CASE 03</span><span aria-hidden="true">↗</span></div>
+              <div class="case-content">
+                <h3>Café Consulting</h3>
+                <p>A practical plan for the concept, menu, equipment, stations and opening process.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy" data-reveal>
+            <p class="section-kicker light">Start a project</p>
+            <h2>Ready to create your café’s new color?</h2>
+            <p>
+              Tell us what you are building, what needs to change and where you are in the
+              process. We’ll shape the right next step.
+            </p>
+            <div class="contact-brand">
+              <img src="assets/ybunn-symbol.svg" width="90" height="90" alt="" />
+              <span>Flavor beyond<br />the familiar.</span>
+            </div>
+          </div>
+
+          <form class="contact-form" data-reveal>
+            <label>Name<input name="name" type="text" placeholder="Your name" required /></label>
+            <label>Email<input name="email" type="email" placeholder="name@example.com" required /></label>
+            <label>
+              Service
+              <select name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option>Signature menu development</option>
+                <option>Barista team training</option>
+                <option>Café setup &amp; consulting</option>
+                <option>Standards &amp; workflow</option>
+              </select>
+            </label>
+            <label>
+              Project details
+              <textarea name="message" placeholder="Tell us about the café and the result you need." rows="5" required></textarea>
+            </label>
+            <button class="button button-lime form-button" type="submit">Send project brief <span aria-hidden="true">↗</span></button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-top">
+          <img
+            class="brand-logo"
+            src="assets/ybunn-logo-white.svg"
+            width="210"
+            height="60"
+            alt="YBUNN Coffee Innovation Studio"
+          />
+          <p>Menu innovation · Barista training · Café setup · Consulting</p>
+          <a href="#home">Back to top <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="container footer-bottom">
+          <span>YBUNN Coffee Innovation Studio</span>
+          <span>Jordan · 2026</span>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
