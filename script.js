@@ -251,7 +251,7 @@
     ].join("\n");
 
     const whatsappUrl =
-      `https://wa.me/962790265426?text=${encodeURIComponent(
+      `https://wa.me/962779089128?text=${encodeURIComponent(
         whatsappMessage
       )}`;
 
