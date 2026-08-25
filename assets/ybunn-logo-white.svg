@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="400" viewBox="0 0 1400 400">
+  <g stroke-linecap="round" stroke-width="42" fill="none">
+    <path d="M120 75 L200 160" stroke="#FFFFFF"/>
+    <path d="M280 75 L200 160" stroke="#FFFFFF"/>
+    <path d="M200 160 L200 275" stroke="#FFFFFF"/>
+  </g>
+  <circle cx="200" cy="160" r="21" fill="#FFFFFF"/>
+  <text x="360" y="205" font-family="Noto Sans, Arial, sans-serif" font-weight="700" font-size="155" letter-spacing="12" fill="#FFFFFF">YBUNN</text>
+  <text x="370" y="285" font-family="Noto Sans, Arial, sans-serif" font-weight="700" font-size="31" letter-spacing="4" fill="#FFFFFF">COFFEE INNOVATION STUDIO</text>
+</svg>
